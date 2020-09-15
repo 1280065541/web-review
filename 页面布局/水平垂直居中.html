@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>水平垂直居中</title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+        html * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="out">
+        <div class="inner">12345</div>
+    </div>
+    <!-- absolute + 负margin -->
+    <style type="text/css">
+        .out {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+
+        .inner {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            left: 50%;
+            top: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+        }
+    </style>
+    <!-- absolute + auto margin -->
+    <!-- <style type="text/css">
+        .out {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+
+        .inner {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    </style> -->
+    <!-- absolute + calc -->
+    <!-- <style type="text/css">
+        .out {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+
+        .inner {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            left: calc(50% - 50px);
+            top: calc(50% - 50px);
+        }
+    </style> -->
+    <!-- absolute + transform -->
+    <!-- <style type="text/css">
+        .out {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+
+        .inner {
+            position: absolute;
+            background: yellow;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style> -->
+    <!-- table -->
+    <!-- <style type="text/css">
+        .out {
+            display: table-cell;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            vertical-align: middle;
+            background: red;
+        }
+
+        .inner {
+            display: inline-block;
+            background: yellow;
+            width: 100px;
+            height: 100px;
+        }
+    </style> -->
+    <!-- flex -->
+    <!-- <style type="text/css">
+        .out {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+
+        .inner {
+            background: yellow;
+            width: 100px;
+            height: 100px;
+        }
+    </style> -->
+    <!-- grid -->
+    <!-- //方法一：父元素指定子元素的对齐方式
+    <style type="text/css">
+        .out {
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+
+        .inner {
+            background: yellow;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+    //方法二：子元素自己指定自己的对齐方式
+    <style type="text/css">
+        .out {
+            display: grid;
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+
+        .inner {
+            background: yellow;
+            width: 100px;
+            height: 100px;
+            align-self: center;
+            justify-self: center;
+        }
+    </style> -->
+
+</body>
+
+</html>
