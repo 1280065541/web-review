@@ -1,0 +1,24 @@
+{
+    "name": "web-review",
+    "version": "1.0.1",
+    "description": "前端复习",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "echo": "echo HELLO WORLD"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/1280065541/web-review.git"
+    },
+    "author": "yl",
+    "private": true,
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/1280065541/web-review/issues"
+    },
+    "homepage": "https://github.com/1280065541/web-review#readme",
+    "keywords": []
+}
