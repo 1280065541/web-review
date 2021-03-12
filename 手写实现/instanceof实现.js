@@ -17,6 +17,23 @@ function newInstanceof(val, type) {
     }
 }
 
+function myInstanceOf(obj, type) {
+    //直接用typeof判断基础数据类型，不是直接返回false
+    if (val === null || typeof val !== 'object') {
+        return false
+    }
+    var proto = obj.__proto__
+    while (true) {
+        if (proto === null) {
+            return false
+        }
+        if (proto === type.prototype) {
+            return true
+        }
+        proto = proto.__proto__
+    }
+}
+
 console.log(newInstanceof(new Number(123), Number))
 //不能判断基础数据类型
 console.log(newInstanceof(123, Number))
