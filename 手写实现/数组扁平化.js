@@ -12,4 +12,4 @@ function flatten(array) {
     return result
 }
 
-console.log(flatten([1,[2,[3]]]))
+console.log(flatten([1,2,[3,[4,5]]]))
